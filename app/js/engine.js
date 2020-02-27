@@ -17,11 +17,11 @@ var canvas , input, content;
 
         c.flip = function()
         {
-            _fctx.clearImage(0,0,_fw,_fh);
+            _fctx.clearRect(0,0,_fw,_fh);
             _fctx.drawImage(this.view,0,0,_fw,_fh);
 
             this.ctx.clearRect(0,0,_vw,_vh);
-        }
+        };
         Object.defineProperty(c,"width",{
             set:function(w){
                 this.view.width = w;
