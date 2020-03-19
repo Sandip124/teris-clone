@@ -12,7 +12,16 @@ require(["src/Game"],function(Game){
             canvas.width = 200;
             canvas.height = 100;
             canvas.scale = 2;
+
+            content.load("back", "res/back.png")
+            content.load("blocks", "res/blocks.png")
+            content.load("numbers", "res/numbers.png")
         }
+
+        tick = function(){
+            
+        }
+
     });
 
     (function(){
